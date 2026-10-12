@@ -1,33 +1,64 @@
 # Sorbarikor Inene
 
-I build secure, testable systems at the boundary between infrastructure,
-cybersecurity, and applied AI. My current interests include network visibility,
-reliable automation, local-first agent tooling, and reproducible evaluation of
-AI-assisted security workflows.
+I build and test reliable automated systems across infrastructure and AI:
+network-exposure explanations, guarded operations tools, and persistent agent state.
 
 [Portfolio](https://sorbarikorinene.com) ·
 [LinkedIn](https://www.linkedin.com/in/sorbarikor-inene/)
 
-## Selected engineering and research work
+## Flagship work
 
-| Project | Problem and contribution | Verified evidence |
-|---|---|---|
-| [Explainable Network Exposure Benchmark](https://github.com/soin8293/explainable-network-exposure-benchmark) | Built a synthetic benchmark for checking whether network-exposure explanations remain cautious and fact-grounded. | Packaged fixtures, transparent scoring, deterministic JSON/CSV results, Python 3.11–3.13 CI, and citation metadata. |
-| [AI Network Exposure Explainer](https://github.com/soin8293/ai_soc_assistant) | Rebuilt an educational Nmap-to-LLM prototype around authorized private targets, explicit trust boundaries, and offline evaluation. | Seventeen tests, synthetic fidelity/overclaim/canary evaluation, threat model, and `v0.3.0`. |
-| [PowerShell QOps](https://github.com/soin8293/powershell-qops) | Developed guarded PowerShell operations and a deterministic read-only audit for system state and capacity findings. | Pester tests, Windows/Linux CI, JSON Schema, sample output, coverage enforcement, and `v0.3.0`. |
-| [Memory_DB](https://github.com/soin8293/memory_Db) | Built a local-first agent-memory layer with append-only records and multiple retrieval paths. | Reproducible 12-record/eight-query benchmark, MRR/recall@3 results, package builds, tests, and `v0.2.0`. |
-| [Live Music Request Orchestrator](https://github.com/soin8293/live-music-request-orchestrator) | Built a local-first live-request controller with normalized ingress, queue invariants, deduplication, and an OBS-ready overlay. | Credential-free demo, 21 tests, enforced coverage, full-history secret scanning, CodeQL, Python 3.11–3.13 CI, and `v0.1.2`. |
-| [Selenium Web Testing](https://github.com/soin8293/Selenium-Web-Testing) | Structured positive and negative browser flows around page objects and an accessibility smoke check. | Four live headless scenarios, retained review artifacts, CI, and `v0.2.0`. |
+### Infrastructure security and AI reliability
 
-## Engineering principles
+[AI SOC Assistant](https://github.com/soin8293/ai_soc_assistant) turns authorized
+private-network scan results into bounded explanations.
+[Explainable Network Exposure Benchmark](https://github.com/soin8293/explainable-network-exposure-benchmark)
+provides the companion synthetic evaluation story: inspectable fixtures and rules
+for factual fidelity, unsupported claims, limitations and injection canaries.
+The application includes its own evaluator; the standalone benchmark has separate
+scoring and is not a production security certification.
 
-- Make authorization, trust boundaries, and failure behavior explicit.
-- Prefer synthetic or local data when operational data cannot be shared.
-- Treat tests, reproducible results, and exact limitations as part of the work.
-- Separate portfolio evidence from private operational systems and data.
-- Document personal contribution, collaborators, coursework, and AI assistance
-  without overstating ownership or outcomes.
+### Operations and automation
 
-I am preparing for graduate study focused on secure and dependable computing.
-The repositories above are maintained as inspectable evidence: each one states
-what it does, how it was verified, and what it does not claim.
+[PowerShell QOps](https://github.com/soin8293/powershell-qops) reports system and
+disk state, identifies capacity findings, and previews controlled file cleanup.
+Its engineering evidence includes Windows/Linux CI, a report schema, coverage
+checks and regression tests for literal file paths and dry-run behavior.
+
+### Agent state and retrieval
+
+[Memory_DB](https://github.com/soin8293/memory_Db) combines an append-only ledger,
+project-scoped recall and optional semantic retrieval. Its tests cover store
+isolation, correction handling and package behavior. Its small published lexical
+benchmark does not establish general semantic retrieval or agent performance.
+Related coordination work remains private and is not linked as public evidence.
+
+## Supporting work
+
+- [Live Music Request Orchestrator](https://github.com/soin8293/live-music-request-orchestrator):
+  an end-to-end event controller with normalization, deduplication, queue state,
+  REST/SSE and an OBS-ready overlay. A candidate for a documented operator pilot.
+- [Selenium Web Testing](https://github.com/soin8293/Selenium-Web-Testing):
+  educational browser-flow and accessibility smoke checks against a public sandbox.
+
+## How I develop these systems
+
+I extend existing projects when a capability fits their purpose. New infrastructure
+or tools need a concrete workload, useful acceptance checks and a maintenance plan.
+The next depth work is repeatable deployment, diagnostics, failure recovery and
+measured use. Current repositories provide inspectable implementation and test
+evidence; sustained customer operation and business outcomes require separate records.
+
+AmirahCo is my outlet for projects and products. Each repository states its own
+ownership, upstream contributions, license and maintenance boundaries.
+
+## AI assistance
+
+I use AI tools to assist with project development, documentation, and
+maintenance. Individual repositories describe their assistance scope
+and retain their own contribution and upstream credits.
+
+The maintainer, soin8293, is responsible for project decisions and for reviewing
+and validating contributions. AI assistance does not establish correctness,
+security, or production readiness; consult the documented checks and
+limitations. Existing licenses and upstream credits remain applicable.
