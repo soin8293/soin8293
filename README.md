@@ -1,12 +1,33 @@
 # Sorbarikor Inene
 
-I build and test automated systems across infrastructure and AI, with a focus
-on clear system behavior, operational safeguards, and reliable state.
+I build tools that help software agents retain decisions, follow workflows,
+and recover from failures. My projects also cover infrastructure automation
+and evaluation of AI-generated security explanations.
 
 [Portfolio](https://sorbarikorinene.com) ·
 [LinkedIn](https://www.linkedin.com/in/sorbarikor-inene/)
 
 ## Flagship work
+
+### Agent context and workflows
+
+[Context Keeper](https://github.com/soin8293/context-keeper) helps coding agents
+save and retrieve project decisions between sessions. It preserves decision
+history, links records to their sources, and produces task briefs that report
+missing or outdated context. Its Python helpers run locally without model calls.
+
+[Usage guide](https://github.com/soin8293/context-keeper/blob/main/docs/usage.md) ·
+[Example brief](https://github.com/soin8293/context-keeper/blob/main/examples/expected-handoff.md) ·
+[Tests and limits](https://github.com/soin8293/context-keeper/blob/main/docs/testing.md)
+
+[Workflow Creator](https://github.com/soin8293/workflow-creator) helps an agent
+turn project documents into runnable workflows with checks and saved progress.
+It reuses an existing project engine where one fits, or the included Workflow
+Foundry runtime. This early release includes an offline installer and an example
+that rejects a wrong result, saves a wait, and resumes after repair.
+
+[Runnable example](https://github.com/soin8293/workflow-creator/blob/main/examples/README.md) ·
+[Testing and trial limits](https://github.com/soin8293/workflow-creator/blob/main/TESTING.md)
 
 ### Infrastructure security and AI reliability
 
@@ -33,23 +54,19 @@ with Windows/Linux CI and regression tests for cleanup behavior.
 [Architecture and safeguards](https://github.com/soin8293/powershell-qops/blob/main/docs/architecture.md) ·
 [Synthetic audit output](https://github.com/soin8293/powershell-qops/blob/main/examples/full-audit.sample.json)
 
-### Agent state and retrieval
-
-[Memory_DB](https://github.com/soin8293/memory_Db) helps agents retain project
-facts and decisions between sessions. This experimental local-first tool uses
-an append-only ledger, project-scoped recall, and optional semantic retrieval;
-tests cover store isolation and correction handling.
-
-[Store and recall a project fact](https://github.com/soin8293/memory_Db#quickstart) ·
-[Synthetic lexical retrieval benchmark](https://github.com/soin8293/memory_Db/blob/main/docs/retrieval-benchmark.md)
-
 ## Supporting work
 
+- [Memory_DB](https://github.com/soin8293/memory_Db): experimental local-first
+  agent memory with an append-only ledger, project-scoped recall, optional semantic
+  retrieval, and a [synthetic lexical benchmark](https://github.com/soin8293/memory_Db/blob/main/docs/retrieval-benchmark.md).
 - [Live Music Request Orchestrator](https://github.com/soin8293/live-music-request-orchestrator):
   turns incoming music-request events into a deduplicated queue and an OBS-ready
   overlay, with REST/SSE updates.
 - [Selenium Web Testing](https://github.com/soin8293/Selenium-Web-Testing):
   educational browser-flow and accessibility smoke checks against a public sandbox.
+- [AmirahCo Japanese](https://japanese.amirahco.us/learn/japanese/v2.html#/today):
+  a Japanese practice app with [Android installer releases](https://github.com/soin8293/amirahco-japanese-android-releases/releases/latest).
+  Application source remains private.
 
 ## How I develop these systems
 
