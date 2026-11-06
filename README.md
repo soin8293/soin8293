@@ -64,9 +64,6 @@ with Windows/Linux CI and regression tests for cleanup behavior.
   overlay, with REST/SSE updates.
 - [Selenium Web Testing](https://github.com/soin8293/Selenium-Web-Testing):
   educational browser-flow and accessibility smoke checks against a public sandbox.
-- [AmirahCo Japanese](https://japanese.amirahco.us/learn/japanese/v2.html#/today):
-  a Japanese practice app with [Android installer releases](https://github.com/soin8293/amirahco-japanese-android-releases/releases/latest).
-  Application source remains private.
 
 ## How I develop these systems
 
